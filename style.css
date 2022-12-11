@@ -1,0 +1,165 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.CoinCoinBase {
+    background-color: #ddbf2c;
+
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 8fr;
+    /* grid margin */
+    grid-gap: 15px;
+
+    padding: 15px;
+}
+
+.CoinCoinBase .tools .logo {}
+
+.CoinCoinBase .tools .logo img {
+    display: block;
+    width: auto;
+    height: 30vh;
+    margin: 0 auto;
+}
+
+.CoinCoinBase .tools .logo h1 {
+    transform: rotate(-25deg);
+    font-size: 120%;
+    height: 10%;
+    text-align: center;
+    color: #ddb800;
+    text-shadow: 0 0 5px #000;
+}
+
+.CoinCoinBase .tools .user {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.CoinCoinBase .tools .user * {
+    margin-bottom: 5px;
+}
+
+.CoinCoinBase .tools {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.CoinCoinBase .base {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tribunes {
+    height: calc(100vh - 100px);
+}
+
+.tribune-menu {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin: 0;
+
+    padding: 5px;
+    height: 30px;
+}
+
+.tribune-menu label {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.tribune-menu a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.posts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 35px);
+    overflow-y: scroll;
+    padding: 0 15px;
+}
+
+.pinni-tribunes {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: block;
+    height: 100%;
+    background-color: rgb(255, 227, 201);
+    padding-left: 15px;
+    border-left: 5px solid rgb(51, 255, 0);
+}
+
+.posts .bigorno {}
+
+.posts .post {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+    background-color: #f2f2f2;
+
+    margin-left: 10px;
+}
+
+.posts .post span {
+    margin: 5px 15px;
+    text-align: left;
+}
+
+.posts .post .username {
+    color: rgb(213, 90, 24);
+    width: 100px;
+    font-size: auto;
+}
+
+.posts .post span i {
+    color: rgb(75, 75, 75);
+}
+
+.base .sender {
+    display: grid;
+    grid-template-columns: 8fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    width: calc(100% - 5px);
+    margin: 5px auto;
+}
+
+.base .sender>div, .base .sender>input {
+    height: 60px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 0 5px;
+
+}
+
+.base .sender>input[type="submit"] {
+    cursor: pointer;
+}

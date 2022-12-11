@@ -1,0 +1,66 @@
+.base .sender>.totoz {
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+}
+
+.base .sender>.totoz>img {
+    height: 100%;
+    width: auto;
+    margin: 0 5px;
+}
+
+.base .sender>.totoz>input {
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.base .sender>.totoz>input[type="submit"] {
+    cursor: pointer;
+}
+
+.base .sender>.totoz>.totoz-list {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    position: absolute;
+    top: -205px;
+
+    width: 280px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.base .sender>.totoz>.totoz-list>input {
+    margin: 5px;
+}
+
+.base .sender>.totoz>.totoz-list>.list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.base .sender>.totoz>.totoz-list>.list img {
+    width: 100%;
+    height: auto;
+}
+
+.hide {
+    display: none !important;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="totoz.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="CoinCoinBase">
+        <div class="tools">
+            <div class="logo">
+                <img src="ducky.png">
+                <h1>CoinCoinOnline<br>v2</h1>
+            </div>
+            <div class="user">
+                <input id="sender-username" type="text" placeholder="Nom">
+                <input type="password" placeholder="Mot de passe">
+                <input type="color">
+            </div>
+            <div>
+                <a>Accueil</a>
+                <a>Profil</a>
+                <a>Paramètres</a>
+                <a>Se déconnecter</a>
+            </div>
+        </div>
+        <div class="base">
+
+            <div id="tribunes" class="tribunes">
+                <div class="tribune-menu">
+                    <label>Tribune:</label>
+                    <a>jecodelesoir</a>
+                    <a>moules</a>
+                </div>
+                <div class="posts">
+                    <div class="pinni-tribunes"></div>
+                </div>
+            </div>
+
+            <form id="form-sender" class="sender">
+                <input id="sender-message" type="text" placeholder="message">
+                <div class="totoz">
+                    <input type="submit" value="plus">
+                    <div class="totoz-list hide">
+                        <input id="totoz-find-input" type="text" placeholder="totoz">
+                        <div class="list">
+
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/Coincoin.js"></script>
+    <!-- <script type="module" src="js/Board.js"></script>-->
+    <!--  <script>
+        for (let i = 0; i < 100; i++) {
+            let pinniTribunes = document.createElement("div");
+            pinniTribunes.classList.add("pinni-tribunes");
+
+            let post = document.createElement("div");
+            post.classList.add("post");
+            post.innerHTML = "<span>[15:58:36]</span><span>JeCodeLeSoir</span><span>Salut</span>";
+            pinniTribunes.appendChild(post);
+
+            document.querySelector(".posts").appendChild(pinniTribunes);
+        }
+
+    </script>-->
+
+</body>
+
+</html>
